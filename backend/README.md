@@ -1,8 +1,8 @@
 # smart-various-backend
 
-# Used to Perform Hedera Blockchain calls  
+## Used to Perform Hedera Blockchain calls  
 
-##Setup  
+## Setup  
 ### Create a .env with the following variables  
 PORT=  
 PRIVATE_KEY=  
@@ -10,8 +10,8 @@ ACCOUNT_ID=
 RPC_URL=  
 ECDSA_PRIVATE_KEY=  
   
-### Run npm install    
-### Run npm run dev or build or start  
+##### Run npm install    
+##### Run npm run dev or build or start  
   
 ## Request are in JSON format  
   
