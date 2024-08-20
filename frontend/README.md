@@ -1,6 +1,6 @@
 # The FrontEnd Code
 
-_ It is a simple UI interface designed to input solidity contracts in txt and output a Smart analysis._
+_ Simple UI test interface designed to input solidity contracts in txt and output a Smart analysis._
 
 # My Web Project
 
@@ -18,12 +18,12 @@ This repository contains the basic files for a simple web project.
 3. Open the `dashboard.html` file in a web browser to view the dashboard.
 
 ### Customization:
-Customization will be done based on user requirements and should garantee intuitive interaction with the user.
+Customization is based upon user requirements and should garantee intuitive interaction with the user.By that means an easy-to use platform.
 
-**Note:** This is a basic template and can be expanded upon details and expansion of this project.
+**Note:** This is a basic template and it can be expanded upon details and expansion of this project.
 
 ### This is project is for:
-* **Public** Any audince that requires solidity contract analysis and own their insights.
+* **Public** Any audince that requires a solidity contract analysis and own their insights. As well as public that requires to learn more about Tech 4.0
 
 
 
