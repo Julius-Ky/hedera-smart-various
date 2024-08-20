@@ -1,6 +1,6 @@
 # The FrontEnd Code
 
-_.It is a simple UI interface designed to input solidity contracts in txt and output a Smart analysis._
+_. It is a simple UI interface designed to input solidity contracts in txt and output a Smart analysis._
 
 # My Web Project
 
