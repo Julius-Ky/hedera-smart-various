@@ -17,7 +17,7 @@ _ Below consider software before installation and how to install it_
 Example
 ```
 
-### Instalation 🔧
+### Installation 🔧
 
 _.  This is how you can build the Flask web application to integrate the reinforcement learning (RL) model._
 
@@ -65,7 +65,7 @@ _Additional notes on how to do  deploy_
 
 _Tools used to build your own project_
 
-* [Flask]([https://flask.palletsprojects.com/en/3.0.x/]) - The Framework
+* [Flask](https://flask.palletsprojects.com/en/3.0.x/) - The Framework
 * [Hedera](https://hedera.com/learning/smart-contracts/smart-contract-security#:~:text=Smart%20contract%20security%20refers%20to,or%20interacting%20with%20smart%20contracts) - Used to study the composition of a solidity contract
 
 
