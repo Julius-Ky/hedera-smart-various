@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Contract Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Contract Recommendation System</h1>
+        <form id="contractForm">
+            <label>
+                <input type="checkbox" name="is_real" value="true"> Is the contract real?
+            </label><br>
+            <label>
+                <input type="checkbox" name="needs_improvement" value="true"> Does it need improvement?
+            </label><br><br>
+            <button type="submit">Get Recommendation</button>
+        </form>
+        <div id="result"></div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#contractForm').on('submit', function(e) {
+                e.preventDefault();
+                $.ajax({
+                    type: 'POST',
+                    url: '/classify',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        $('#result').html('<h2>Recommendation:</h2><p>' + response.recommendation + '</p>');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
