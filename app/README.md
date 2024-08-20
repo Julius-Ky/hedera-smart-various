@@ -19,7 +19,9 @@ Da un ejemplo
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_.  This is how you can build the Flask web application to integrate the reinforcement learning (RL) model._
+
+1.Set Up the Flask Application_
 
 _Dí cómo será ese paso_
 
