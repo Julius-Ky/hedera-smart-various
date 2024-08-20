@@ -1,6 +1,6 @@
 # The FrontEnd Code
 
-Simple UI test interface designed to input solidity contracts in txt and output a Smart analysis.
+This is a simple UI test interface designed to test hedera-smart-various service , and therefor to input solidity contracts in txt and output a Smart analysis.
 
 # Smart-Varios Project frontend
 
