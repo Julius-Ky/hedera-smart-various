@@ -1,6 +1,6 @@
 # The FrontEnd Code
 
-_ Simple UI test interface designed to input solidity contracts in txt and output a Smart analysis._
+Simple UI test interface designed to input solidity contracts in txt and output a Smart analysis.
 
 # Smart-Varios Project frontend
 
