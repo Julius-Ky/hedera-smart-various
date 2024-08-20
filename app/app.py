@@ -8,11 +8,12 @@ import matplotlib.pyplot as plt
 import threading
 
 # Constants for the DQN model
-ALPHA = 0.001  # Learning rate usually this value generally displays useful convergance
-GAMMA = 0.9  # Average Discount factor that helps the agent to focus on long-term goals , smaller will keep it in short term goals
-EPSILON = 1.0  # Exploration rate
+ALPHA = 0.001  # Learning rate value generally displays useful convergance
+GAMMA = 0.9  # Discount factor helps the agent to focus on long-term goals or short term
+EPSILON = 1.0  # Exploration rate associated with how random you take an action.
 EPSILON_MIN = 0.01
-EPSILON_DECAY = 0.995
+EPSILON_DECAY = 0.995 #rate of decay, it should help faster convergance between the learning for past actions and new ones
+
 
 # Flask app setup
 app = Flask(__name__)
