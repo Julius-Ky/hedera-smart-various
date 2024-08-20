@@ -74,7 +74,7 @@ class SmartContractEnvironment:
         # You can replace this with the actual contract evaluation logic
         reward = random.choice([1, -1]) #  random reward for simplicity in this logic we do not use punishment since we are already using gamma and epsilon
         done = random.choice([True, False])
-        self.state = [random.randint(0, 1) for _ in range(self.state_space)]
+        self.state = [random.randint(0, 1) for _ in range(self.state_space)]#0 empty field, 1 a existing state field
         return self.state, reward, done
 
 def simulate_environment(contract_features):
