@@ -17,3 +17,40 @@ As the blockchain technology and cryptocurrency markets continue to grow, securi
 
 # AI Model Process
 ![스크린샷 2024-08-19 110911](https://github.com/user-attachments/assets/d180b417-6e5b-4825-9234-73584ef32ebb)
+
+# Tech
+The AI Smart Module is designed to analyze solidity contracts and provide recommendations by using Reinforcement Learning Techniques.
+
+## **Components**
+- Deep Q-Network (DQN) for AI-driven decisions.
+- Flask for API interaction and web service.
+- JSON for data exchange and storage.
+- Hedera a decentralized data management platform.
+
+## Deep Q-Network (DQN) Model
+**DQN explained simply:**
+- The goal of a Deep Q-Network is to train a network (an agent) to approximate the value of the Q function that maps the optimal action according to the state by interacting with an environment.The agent is rewarded for correct moves and punished for the wrong ones.
+- The target of the model is to classify: real from fake smart contract plus identify potential recommendations for smart contracts.
+
+## Model Components
+- **State Space:** "Unauthorized access", "Incomplete whitelists checks", "Lack of event logging", "Gas Efficiency", "Documentation".
+- **Action Space:** The model will be able to discern either recommend improvement or leave as it is.
+- **Reward Function:** Incentivizes correct identification and action.
+
+## Infrastructure
+- **Programming Languages: Python**
+    - Not only handles the structure, logic of DQN model, but also the interaction between components.
+- **HTML, CSS**
+    - HTML provides web page structure, whereas CSS is mainly used to control web page styling.
+- **Web Framework: Flask**
+    - Provides API endpoints to access the model outputs and serve the data.
+- **Data Format: JSON**
+    - used for transmitting the model data in web applications , smart contract information, and other data.
+- **Blockchain Platform: Hedera**
+    - Decentralized platform that stores and displays data related to smart contracts using Hedera’s Service.
+
+## Blockchain
+- **Ethereum Virtual Machine (EVM): Solidity**
+    - A contract-oriented, high-level programming language for building smart contracts.
+- **Hedera SDKs & APIs: JavaScript**
+    - Facilitate the process of performing queries from the Hedera Mirror Node API & Network Explorer
