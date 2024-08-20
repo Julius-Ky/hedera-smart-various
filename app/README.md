@@ -4,20 +4,20 @@ _It is designed to analyze solidity contracts and provide recommendations by usi
 
 ## Starting 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+_. Below you will find instructions that will allow get a copy of the project to make it work in your own local machine for testing purposes._
 
 Take a look on **Deployment** to know how to deploy the app.
 
 
-### pre-requisites 📋
+### Pre-requisites 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_ Below consider software before installation and how to install it_
 
 ```
-Da un ejemplo
+Example
 ```
 
-### Instalación 🔧
+### Instalation 🔧
 
 _.  This is how you can build the Flask web application to integrate the reinforcement learning (RL) model._
 
@@ -37,11 +37,19 @@ hasta finalizar
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
-## Ejecutando las pruebas ⚙️
+## Testing ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+_Explain como ejecutar las pruebas automatizadas para este sistema_
 
-### Analice las pruebas end-to-end 🔩
+### Analize  testing from end-to-end 🔩
+
+_Explain what is the meaning for this result and why_
+
+```
+Example
+```
+
+### And test css files ⌨️
 
 _Explica que verifican estas pruebas y por qué_
 
@@ -49,60 +57,38 @@ _Explica que verifican estas pruebas y por qué_
 Da un ejemplo
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
+## Deployment 📦
 
-_Explica que verifican estas pruebas y por qué_
+_Additional notes on how to do  deploy_
 
-```
-Da un ejemplo
-```
+## Built with 🛠️
 
-## Despliegue 📦
+_Tools used to build your own project_
 
-_Agrega notas adicionales sobre como hacer deploy_
+* [Flask]([https://flask.palletsprojects.com/en/3.0.x/]) - The Framework
+* [Hedera](https://hedera.com/learning/smart-contracts/smart-contract-security#:~:text=Smart%20contract%20security%20refers%20to,or%20interacting%20with%20smart%20contracts) - Used to study the composition of a solidity contract
 
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
 
 ## Wiki 📖
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+Learn more about Deep Learning [Mathworks](https://www.mathworks.com/discovery/deep-learning.html)
 
-## Versionado 📌
+## Version📌
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+app.py V1.0.0.
 
-## Autores ✒️
+## Authors ✒️
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
 * **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
 * **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
-* etc.
 
 
+## Show Appreciation For Good Work 🎁
 
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+* Commet about this project 📢
+* Hope this project taught you something new🤓.
+
+
