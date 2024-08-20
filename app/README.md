@@ -78,13 +78,11 @@ Learn more about Deep Learning [Mathworks](https://www.mathworks.com/discovery/d
 app.py V1.0.0.
 
 ## Authors ✒️
+_About the authors:_
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-
+* **Joseph Cho** - *Project Manager* - [Joseph Cho](Joseph-hackathon)
+* **Julius Kariuki** - *Software Engineer* - [Julius Kariuki](Julius-Ky)
+* **Ana Ramirez** - *AI Engineer* - [Ana Ramirez](Ana1Pau)
 
 ## Show Appreciation For Good Work 🎁
 
