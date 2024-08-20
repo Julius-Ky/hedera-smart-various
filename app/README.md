@@ -21,19 +21,48 @@ Example
 
 _.  This is how you can build the Flask web application to integrate the reinforcement learning (RL) model._
 
-1.Set Up the Flask Application_
 
-_Dí cómo será ese paso_
 
-```
-Da un ejemplo
-```
+_1. Set Up the Flask Application_
 
-_Y repite_
+First, install Flask if you haven't already:
 
 ```
-hasta finalizar
+pip install flask
 ```
+
+
+2. Flask Application Structure
+Check the flask directory structure:
+
+
+flask_rl_app/
+│
+├── app.py
+├── static/
+│   └── style.css
+└── templates/
+    └── index.html
+
+3. app.py (Main Flask Application)
+This file  contains the Flask app and the DQN model logic.
+
+4. index.html (Main HTML Page)
+This HTML file provides a simple interface for users to input the smart contract details and get a recommendation.
+
+5. style.css (Optional CSS Styling)
+To add some basic styling:
+
+6. Running the Application
+Navigate to the directory where app.py is located and run:
+
+Python app.py
+Then, open your browser and go to http://127.0.0.1:5000/ to access the app.
+
+7. Usage
+* Select whether the smart contract is real and if it needs improvement.
+* Submit the form to receive a recommendation from the RL model.
+This simple Flask application integrates the RL model to provide smart contract recommendations. You can expand this by improving the state representation, adding more sophisticated feature extraction, and refining the recommendation logic.
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
