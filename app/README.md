@@ -35,7 +35,7 @@ pip install flask
 2. Flask Application Structure
 Check the flask directory structure:
 
-
+```
 flask_rl_app/
 │
 ├── app.py
@@ -43,6 +43,7 @@ flask_rl_app/
 │   └── style.css
 └── templates/
     └── index.html
+```
 
 3. app.py (Main Flask Application)
 This file  contains the Flask app and the DQN model logic.
