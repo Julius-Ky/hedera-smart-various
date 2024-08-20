@@ -1,10 +1,10 @@
-# The AI Smart Module 
+# The FrontEnd Code
 
-_It is designed to analyze solidity contracts and provide recommendations by using Reinforcement Learning Techniques._
+_.It is a UI interface designed to input solidity contracts and retrieve information from a Smart Analyzer to users._
 
-## Starting 🚀
+## Starting up 🚀
 
-_. Below you will find instructions that will allow get a copy of the project to make it work in your own local machine for testing purposes._
+_. Below you will find instructions that will allow get a copy of the project to make it work in your  local machine for testing purposes._
 
 Take a look on **Deployment** to know how to deploy the app.
 
@@ -19,7 +19,7 @@ Example
 
 ### Installation 🔧
 
-_.  This is how you can build the Flask web application to integrate the reinforcement learning (RL) model._
+_.  This is how you can deploy a website from your local host._
 
 1.Set Up the Flask Application_
 
