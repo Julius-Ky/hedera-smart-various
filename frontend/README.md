@@ -36,21 +36,17 @@ _Tools used to build your own project_
 * [Hedera](https://hedera.com/learning/smart-contracts/smart-contract-security#:~:text=Smart%20contract%20security%20refers%20to,or%20interacting%20with%20smart%20contracts) - Used to study the composition of a solidity contract
 
 
-## Wiki 📖
-
-Learn more about Deep Learning [Mathworks](https://www.mathworks.com/discovery/deep-learning.html)
 
 ## Version📌
 
-app.py V1.0.0.
+ Hedera-frontend V1.0.0.
 
 ## Authors ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+_About the authors_
 
 * **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
 * **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
 
 
 
-## Show Appreciation For Good Work 🎁
