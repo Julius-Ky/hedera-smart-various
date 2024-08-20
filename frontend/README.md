@@ -2,7 +2,7 @@
 
 _ Simple UI test interface designed to input solidity contracts in txt and output a Smart analysis._
 
-# My Web Project
+# Smart-Varios Project frontend
 
 This repository contains the basic files for a simple web project.
 
