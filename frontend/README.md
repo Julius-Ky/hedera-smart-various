@@ -1,65 +1,32 @@
 # The FrontEnd Code
 
-_.It is a UI interface designed to input solidity contracts and retrieve information from a Smart Analyzer to users._
+_.It is a simple UI interface designed to input solidity contracts in txt and output a Smart analysis._
 
-## Starting up 🚀
+# My Web Project
 
-_. Below you will find instructions that will allow get a copy of the project to make it work in your  local machine for testing purposes._
+This repository contains the basic files for a simple web project.
 
-Take a look on **Deployment** to know how to deploy the app.
+### Files:
+* **index.html:** The main HTML frontend file for this project.
+* **style.css:** The CSS stylesheet for this project.
+* **dashboard.html:** An additional HTML page for a dashboard to provide a customized service for users to review their data.
+* **dashboard.css:** CSS styles specifically for this dashboard.
+
+### Usage:
+1. Clone the repository to your local machine.
+2. Open the `index.html` file in a web browser to view the main page.
+3. Open the `dashboard.html` file in a web browser to view the dashboard.
+
+### Customization:
+Customization will be done based on user requirements and should garantee intuitive interaction with the user.
+
+**Note:** This is a basic template and can be expanded upon details and expansion of this project.
+
+### This is project is for:
+* **Public** Any audince that requires solidity contract analysis and own their insights.
 
 
-### Pre-requisites 📋
 
-_ Below consider software before installation and how to install it_
-
-```
-Example
-```
-
-### Installation 🔧
-
-_.  This is how you can deploy a website from your local host._
-
-1.Set Up the Flask Application_
-
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Testing ⚙️
-
-_Explain como ejecutar las pruebas automatizadas para este sistema_
-
-### Analize  testing from end-to-end 🔩
-
-_Explain what is the meaning for this result and why_
-
-```
-Example
-```
-
-### And test css files ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Deployment 📦
-
-_Additional notes on how to do  deploy_
 
 ## Built with 🛠️
 
