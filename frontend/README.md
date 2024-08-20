@@ -20,7 +20,7 @@ This repository contains the basic files for a simple web project.
 ### Customization:
 Customization is based upon user requirements and should garantee intuitive interaction with the user.By that means an easy-to use platform.
 
-**Note:** This is a basic template and it can be expanded upon details and expansion of this project.
+**Note:** This is a basic template and it can be expanded upon further details and expansion of this project itself.
 
 ### This is project is for:
 * **Public** Any audince that requires a solidity contract analysis and own their insights. As well as public that requires to learn more about Tech 4.0
