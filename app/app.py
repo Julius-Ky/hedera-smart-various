@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 import threading
 
 # Constants for the DQN model
-ALPHA = 0.001  # Learning rate value generally displays useful convergance
-GAMMA = 0.9  # Discount factor helps the agent to focus on long-term goals or short term
+ALPHA = 0.001  # Learning rate usually this value generally displays useful convergance
+GAMMA = 0.9  # Average Discount factor that helps the agent to focus on long-term goals , smaller will keep it in short term goals
 EPSILON = 1.0  # Exploration rate
 EPSILON_MIN = 0.01
 EPSILON_DECAY = 0.995
