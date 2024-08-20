@@ -20,7 +20,7 @@ This repository contains the basic files for a simple web project.
 ### Customization:
 Customization is based upon user requirements and should garantee intuitive interaction with the user.By that means an easy-to use platform.
 
-**Note:** This is a basic template and it can be expanded upon further details and expansion of this project itself.
+**Note:** This is a basic template and it can be expanded upon further details and expansion of the project itself.
 
 ### This is project is for:
 * **Public** Any audince that requires a solidity contract analysis and own their insights. As well as public that requires to learn more about Tech 4.0
@@ -28,12 +28,6 @@ Customization is based upon user requirements and should garantee intuitive inte
 
 
 
-## Built with 🛠️
-
-_Tools used to build your own project_
-
-* [Flask](https://flask.palletsprojects.com/en/3.0.x/) - The Framework
-* [Hedera](https://hedera.com/learning/smart-contracts/smart-contract-security#:~:text=Smart%20contract%20security%20refers%20to,or%20interacting%20with%20smart%20contracts) - Used to study the composition of a solidity contract
 
 
 
@@ -43,10 +37,10 @@ _Tools used to build your own project_
 
 ## Authors ✒️
 
-_About the authors_
+_About the authors:_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
+* **Joseph Cho** - *Project Manager* - [Joseph Cho](Joseph-hackathon)
+* **Julius Kariuki** - *Software Engineer* - [Julius Kariuki](Julius-Ky)
+* **Ana Ramirez** - *AI Engineer* - [Ana Ramirez](Ana1Pau)
 
 
