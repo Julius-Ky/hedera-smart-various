@@ -1,15 +1,15 @@
-# Título del Proyecto
+# The AI Smart Module 
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_It is designed to analyze solidity contracts and provide recommendations by using Reinforcement Learning Techniques._
 
-##Comenzando 🚀
+## Starting 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+Take a look on **Deployment** to know how to deploy the app.
 
 
-### Pre-requisitos 📋
+### pre-requisites 📋
 
 _Que cosas necesitas para instalar el software y como instalarlas_
 
