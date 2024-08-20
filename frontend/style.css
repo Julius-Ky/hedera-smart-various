@@ -1,0 +1,182 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a1a;
+    color: #f0f0ff;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #111;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 2rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ccccff;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+.auth-buttons button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sign-in {
+    background-color: transparent;
+    color: #ccccff;
+}
+
+.sign-up {
+    background-color: #5658dd;
+    color: #ffffff;
+}
+
+.sign-up:hover, .sign-in:hover {
+    background-color: #6b6dd8;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(180deg, #0d0d29 0%, #1a1a3d 100%);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #5658dd;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons button:hover {
+    background-color: #6b6dd8;
+}
+
+.upload-box {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #12122c;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.upload-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.upload-box p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.upload-box button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #5658dd;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-box button:hover {
+    background-color: #6b6dd8;
+}
+
+/* Feature Section */
+.features {
+    padding: 4rem 2rem;
+    background-color: #0d0d29;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feature-card {
+    padding: 2rem;
+    background-color: #12122c;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    color: #ccccff;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 4rem 2rem;
+    background-color: #1a1a3d;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #0a0a1a;
+    color: #ccccff;
+    font-size: 0.875rem;
+}
