@@ -22,7 +22,7 @@ class DQNAgent:
     def __init__(self, state_space, action_space):
         self.state_space = state_space
         self.action_space = action_space
-        self.memory = deque(maxlen=2000)
+        self.memory = deque(maxlen=2000) # We are using a deque instead normal list in python is because we are performing append function a lot. The complexity of the append function in the list is O(N) and in deque is O(1) which is constant. 
         self.gamma = GAMMA  # Discount factor
         self.epsilon = EPSILON  # Exploration rate
         self.epsilon_min = EPSILON_MIN
@@ -30,25 +30,26 @@ class DQNAgent:
         self.model = self.build_model()
 
     def build_model(self):
+        # Our Agent will build its own simple neural network model based on learning experience. Let us define it
         model = tf.keras.Sequential()
         model.add(layers.Dense(24, input_dim=self.state_space, activation='relu'))
         model.add(layers.Dense(24, activation='relu'))
         model.add(layers.Dense(self.action_space, activation='linear'))
-        model.compile(loss='mse', optimizer=tf.keras.optimizers.Adam(learning_rate=ALPHA))
+        model.compile(loss='mse', optimizer=tf.keras.optimizers.Adam(learning_rate=ALPHA))# adaptive optimizers like Adam helps in sequence of problems as  policy evolves
         return model
 
-    def remember(self, state, action, reward, next_state, done):
+    def remember(self, state, action, reward, next_state, done): #The meaning of done, means the episode if it is finished or not
         self.memory.append((state, action, reward, next_state, done))
 
-    def act(self, state):
+    def act(self, state):  # Begin to make random actions so our neural networks begin to learn and create new connections
         if np.random.rand() <= self.epsilon:
             return random.randrange(self.action_space)
         q_values = self.model.predict(state)
         return np.argmax(q_values[0])
 
-    def replay(self, batch_size):
-        minibatch = random.sample(self.memory, batch_size)
-        for state, action, reward, next_state, done in minibatch:
+    def replay(self, batch_size):# replace the values from the last episode and stick with the actions that worked properly
+        minibatch = random.sample(self.memory, batch_size)#minibatch is used to store a small amount of information for the network to build new learning from past experience
+        for state, action, reward, next_state, done in minibatch: # For every action there is a reward so the NN will save it.
             target = reward
             if not done:
                 target = reward + self.gamma * np.amax(self.model.predict(next_state)[0])
@@ -69,7 +70,9 @@ class SmartContractEnvironment:
         return self.state
 
     def step(self, action):
-        reward = random.choice([1, -1])
+        # This varible introduces the logic for taking a step (action) in the environment
+        # You can replace this with the actual contract evaluation logic
+        reward = random.choice([1, -1]) #  random reward for simplicity in this logic we do not use punishment since we are already using gamma and epsilon
         done = random.choice([True, False])
         self.state = [random.randint(0, 1) for _ in range(self.state_space)]
         return self.state, reward, done
@@ -85,15 +88,15 @@ def simulate_environment(contract_features):
 def train_dqn(epochs=1000, batch_size=32):
     env = SmartContractEnvironment()
     agent = DQNAgent(state_space=env.state_space, action_space=env.action_space)
-
+# Lists that store data for plotting performance purposes
     rewards_list = []
     epsilon_list = []
-
+      # Only train if the contract is real
     for epoch in range(epochs):
         contract_features = {'is_real': random.choice([True, False])}
         reward = simulate_environment(contract_features)
         if reward is None:
-            continue
+            continue  # Skip this iteration if the contract is not real
 
         state = env.reset()
         state = np.reshape(state, [1, env.state_space])
@@ -113,9 +116,11 @@ def train_dqn(epochs=1000, batch_size=32):
         if len(agent.memory) > batch_size:
             agent.replay(batch_size)
 
+            # Append data for plotting
         rewards_list.append(total_reward)
         epsilon_list.append(agent.epsilon)
 
+    # Measure and display the performance of the NN training 
     plt.figure(figsize=(12, 6))
     plt.subplot(1, 2, 1)
     plt.plot(rewards_list)
