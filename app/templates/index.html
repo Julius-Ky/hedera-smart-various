@@ -3,39 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Contract Recommendation System</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>DQN Smart Contract Evaluation</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Smart Contract Recommendation System</h1>
-        <form id="contractForm">
-            <label>
-                <input type="checkbox" name="is_real" value="true"> Is the contract real?
-            </label><br>
-            <label>
-                <input type="checkbox" name="needs_improvement" value="true"> Does it need improvement?
-            </label><br><br>
-            <button type="submit">Get Recommendation</button>
-        </form>
-        <div id="result"></div>
-    </div>
+    <h1>Smart Contract Vulnerability Analysis</h1>
+    <button onclick="startTraining()">Start Training</button>
+    <button onclick="getResults()">View Results</button>
+    
+    <div id="training-status"></div>
+    <h2>Test Results:</h2>
+    <table id="results-table" border="1">
+        <thead>
+            <tr>
+                <th>Vulnerability</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('#contractForm').on('submit', function(e) {
-                e.preventDefault();
-                $.ajax({
-                    type: 'POST',
-                    url: '/classify',
-                    data: $(this).serialize(),
-                    success: function(response) {
-                        $('#result').html('<h2>Recommendation:</h2><p>' + response.recommendation + '</p>');
-                    }
+        function startTraining() {
+            fetch('/train')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('training-status').innerText = data.message;
                 });
-            });
-        });
+        }
+
+        function getResults() {
+            fetch('/results')
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.querySelector("#results-table tbody");
+                    tableBody.innerHTML = '';
+                    data.forEach(result => {
+                        const row = document.createElement("tr");
+                        const vulnerabilityCell = document.createElement("td");
+                        const actionCell = document.createElement("td");
+
+                        vulnerabilityCell.innerText = result.vulnerability;
+                        actionCell.innerText = result.action;
+
+                        row.appendChild(vulnerabilityCell);
+                        row.appendChild(actionCell);
+                        tableBody.appendChild(row);
+                    });
+                });
+        }
     </script>
 </body>
 </html>
