@@ -1,0 +1,4 @@
+State,Action,Action Label,Reward
+"[[1, 1, 1, 0, 1]]",0,Apply recommendation,1
+"[[1, 0, 0, 1, 1]]",1,Leave it as it is,-1
+"[[1, 0, 1, 0, 1]]",1,Leave it as it is,1
