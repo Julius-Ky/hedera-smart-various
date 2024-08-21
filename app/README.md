@@ -65,7 +65,7 @@ Then, open your browser and go to http://127.0.0.1:5000/ to access the app.
 * Submit the form to receive a recommendation from the RL model.
 This simple Flask application integrates the RL model to provide smart contract recommendations. You can expand this by improving the state representation, adding more sophisticated feature extraction, and refining the recommendation logic.
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+
 
 ## Testing ⚙️
 
@@ -79,13 +79,7 @@ _Explain what is the meaning for this result and why_
 Example
 ```
 
-### And test css files ⌨️
 
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
 
 ## Deployment 📦
 
