@@ -1,0 +1,21 @@
+pragma solidity ^0.8.0;
+
+contract ExampleContract {
+    uint256 public number;
+    string public name;
+    address public owner;
+    
+    constructor(string memory _name) {
+        number = 42;
+        name = _name;
+        owner = msg.sender;
+    }
+
+    function updateNumber(uint256 _number) public {
+        number = _number;
+    }
+
+    function getName() public view returns (string memory) {
+        return name;
+    }
+}
