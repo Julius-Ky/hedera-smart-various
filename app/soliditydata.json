@@ -1,0 +1,52 @@
+{
+  "contract": {
+    "name": "ExampleContract",
+    "fields": [
+      {
+        "type": "uint256",
+        "name": "number",
+        "visibility": "public"
+      },
+      {
+        "type": "string",
+        "name": "name",
+        "visibility": "public"
+      },
+      {
+        "type": "address",
+        "name": "owner",
+        "visibility": "public"
+      }
+    ],
+    "constructor": {
+      "parameters": [
+        {
+          "type": "string",
+          "name": "_name"
+        }
+      ]
+    },
+    "functions": [
+      {
+        "name": "updateNumber",
+        "parameters": [
+          {
+            "type": "uint256",
+            "name": "_number"
+          }
+        ],
+        "visibility": "public"
+      },
+      {
+        "name": "getName",
+        "returns": [
+          {
+            "type": "string"
+          }
+        ],
+        "visibility": "public",
+        "type": "view"
+      }
+    ]
+  }
+}
