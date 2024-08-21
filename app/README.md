@@ -39,8 +39,8 @@ Check the flask directory structure:
 flask_rl_app/
 │
 ├── app.py
-├── app.py
-├── app.py
+├── dqn_model.h5
+├── train_model.py
 └── templates/
     └── index.html
 ```
